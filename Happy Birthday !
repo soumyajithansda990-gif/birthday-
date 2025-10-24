@@ -27,7 +27,7 @@ Content-Location: http://localhost:7700/birthday.html
   <div class="balloon b3"></div>
   <div class="balloon b4"></div>
   <div class="balloon b5"></div>
-  <h1>🎉 Happy Birthday To Me 🎂</h1>
+  <h1>🎉 Happy Birthday Soumyajit 🎂</h1>
   <p>Wishing you a day filled with love, laughter, and happiness!</p>
  
 </body></html>
@@ -112,6 +112,7 @@ Content-Location: cid:css-54b457ce-539b-481f-9049-96696d837cbc@mhtml.blink
 
 .eruda-icon-warn::before { content: ""; }
 ------MultipartBoundary--hdXJtmRHJp0CD5h1DUc7U1mLJl756fTospgS86zpYA------
+
 
 
 

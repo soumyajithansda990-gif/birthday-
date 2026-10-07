@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Jharna 🎂</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    overflow:hidden;
+    height:100vh;
+    font-family:Arial,sans-serif;
+    background:
+        radial-gradient(circle at 50% 40%,#4b176d,#160022 55%,#050008);
+    color:white;
+}
+
+/* Stars */
+.star{
+    position:absolute;
+    width:3px;
+    height:3px;
+    background:white;
+    border-radius:50%;
+    animation:twinkle 2s infinite alternate;
+}
+
+@keyframes twinkle{
+    from{opacity:.2;transform:scale(.5);}
+    to{opacity:1;transform:scale(1.6);}
+}
+
+/* Main */
+.container{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+
+/* Card */
+.card{
+    width:90%;
+    max-width:700px;
+    padding:35px 25px;
+    text-align:center;
+    border-radius:30px;
+
+    background:rgba(255,255,255,.09);
+    border:1px solid rgba(255,255,255,.2);
+
+    backdrop-filter:blur(15px);
+
+    box-shadow:
+        0 0 40px rgba(255,0,180,.3),
+        inset 0 0 30px rgba(255,255,255,.05);
+
+    z-index:10;
+
+    animation:cardIn 1.8s ease;
+}
+
+@keyframes cardIn{
+    from{
+        opacity:0;
+        transform:scale(.5) rotate(-5deg);
+    }
+    to{
+        opacity:1;
+        transform:scale(1) rotate(0);
+    }
+}
+
+/* Cake */
+.cake{
+    font-size:75px;
+    animation:floatCake 2s ease-in-out infinite;
+}
+
+@keyframes floatCake{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-12px);}
+}
+
+/* Heading */
+h1{
+    font-size:clamp(42px,9vw,75px);
+    margin:10px 0;
+
+    background:linear-gradient(
+        90deg,
+        #ff4ecd,
+        #ffd166,
+        #ffffff,
+        #ff4ecd
+    );
+
+    background-size:300%;
+
+    -webkit-background-clip:text;
+    color:transparent;
+
+    animation:gradient 5s linear infinite;
+}
+
+@keyframes gradient{
+    0%{background-position:0%;}
+    100%{background-position:300%;}
+}
+
+h2{
+    font-size:32px;
+    color:#ffd6f7;
+}
+
+/* Message */
+.message{
+    margin:20px auto;
+    max-width:580px;
+    line-height:1.7;
+    font-size:19px;
+    color:#eee;
+}
+
+.highlight{
+    color:#ff78d1;
+    font-weight:bold;
+}
+
+/* Buttons */
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+button{
+    padding:14px 25px;
+    border:none;
+    border-radius:30px;
+
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    background:linear-gradient(
+        45deg,
+        #ff1493,
+        #8a2be2
+    );
+
+    box-shadow:0 0 20px rgba(255,20,147,.5);
+
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 35px rgba(255,20,147,.9);
+}
+
+/* Balloons */
+.balloon{
+    position:absolute;
+    bottom:-150px;
+
+    width:55px;
+    height:70px;
+
+    border-radius:50%;
+
+    animation:balloonUp linear infinite;
+}
+
+.balloon:after{
+    content:"";
+    position:absolute;
+
+    top:68px;
+    left:27px;
+
+    width:2px;
+    height:150px;
+
+    background:white;
+    opacity:.5;
+}
+
+@keyframes balloonUp{
+    from{
+        transform:translateY(0) rotate(-5deg);
+    }
+    to{
+        transform:translateY(-120vh) rotate(10deg);
+    }
+}
+
+/* Confetti */
+.confetti{
+    position:absolute;
+
+    width:8px;
+    height:14px;
+
+    top:-20px;
+
+    animation:fall linear forwards;
+}
+
+@keyframes fall{
+    to{
+        transform:translateY(110vh) rotate(720deg);
+    }
+}
+
+/* Footer */
+.footer{
+    margin-top:20px;
+    font-size:13px;
+    color:#aaa;
+}
+</style>
+</head>
+
+
+<body>
+
+<!-- Background Balloons -->
+
+<div class="balloon"
+style="left:5%;background:#ff4d6d;animation-duration:9s;"></div>
+
+<div class="balloon"
+style="left:20%;background:#ffd166;animation-duration:12s;"></div>
+
+<div class="balloon"
+style="left:75%;background:#06d6a0;animation-duration:10s;"></div>
+
+<div class="balloon"
+style="left:90%;background:#4cc9f0;animation-duration:13s;"></div>
+
+
+<div class="container">
+
+<div class="card">
+
+<div class="cake">🎂</div>
+
+<h1>Happy Birthday!</h1>
+
+<h2>Jharna 💖</h2>
+
+
+<p class="message">
+
+Today is a <span class="highlight">
+very special day for you.
+</span> ✨
+
+<br><br>
+
+I wish you a very
+<span class="highlight">
+Happy Birthday!
+</span> 🎉
+
+<br>
+
+May you always stay happy,
+healthy and successful.
+
+<br>
+
+May all your dreams come true
+and your life be filled with
+beautiful moments. 🌸✨
+
+<br><br>
+
+<span class="highlight">
+Keep smiling and keep shining! ❤️
+</span>
+
+</p>
+
+
+<div class="buttons">
+
+<button onclick="surprise()">
+🎁 Click for Surprise
+</button>
+
+<button onclick="toggleMusic()" id="musicBtn">
+🎵 Music OFF
+</button>
+
+</div>
+
+
+<div class="footer">
+Made with ❤️ specially for Jharna
+</div>
+
+</div>
+</div>
+
+
+<!-- Music -->
+
+<audio id="birthdayMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+
+<script>
+
+/* =========================
+   CREATE STARS
+========================= */
+
+for(let i=0;i<80;i++){
+
+    let star=document.createElement("div");
+
+    star.className="star";
+
+    star.style.left=
+        Math.random()*100+"%";
+
+    star.style.top=
+        Math.random()*100+"%";
+
+    star.style.animationDelay=
+        Math.random()*2+"s";
+
+    document.body.appendChild(star);
+}
+
+
+/* =========================
+   MUSIC
+========================= */
+
+const music =
+document.getElementById("birthdayMusic");
+
+const musicBtn =
+document.getElementById("musicBtn");
+
+function toggleMusic(){
+
+    if(music.paused){
+
+        music.play();
+
+        musicBtn.innerHTML="🔊 Music ON";
+
+    }else{
+
+        music.pause();
+
+        musicBtn.innerHTML="🎵 Music OFF";
+
+    }
+}
+
+
+/* =========================
+   SURPRISE BUTTON
+========================= */
+
+function surprise(){
+
+    createConfetti();
+
+    setTimeout(()=>{
+
+        alert(
+        "🎉 Happy Birthday Jharna! 🎂💖\n\n" +
+        "May your special day be filled with happiness, " +
+        "beautiful memories and lots of smiles! ✨"
+        );
+
+    },500);
+
+}
+
+
+/* =========================
+   CONFETTI
+========================= */
+
+function createConfetti(){
+
+    for(let i=0;i<180;i++){
+
+        const confetti =
+        document.createElement("div");
+
+        confetti.className="confetti";
+
+        confetti.style.left=
+            Math.random()*100+"%";
+
+        confetti.style.background=
+            `hsl(${Math.random()*360},100%,60%)`;
+
+        confetti.style.animationDuration=
+            (Math.random()*3+2)+"s";
+
+        confetti.style.transform=
+            `rotate(${Math.random()*360}deg)`;
+
+        document.body.appendChild(confetti);
+
+        setTimeout(()=>{
+
+            confetti.remove();
+
+        },5000);
+    }
+}
+
+</script>
+
+</body>
+</html>

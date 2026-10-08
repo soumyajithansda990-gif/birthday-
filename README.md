@@ -8,7 +8,7 @@
 - Celebration animations
 
 ## 🚀 Live Website
-https://soumyajithanad999-gif.github.io/blrthday-/
+https://soumyajithansda990-gif.github.io/birthday-/
 
 ## 📁 Project Structure
 - index.html (Main file)
